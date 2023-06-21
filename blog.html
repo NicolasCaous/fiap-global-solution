@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>FIAP - Global Solution</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="./css/shared.css" />
+    <link rel="stylesheet" href="./css/blog.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"> <img src="img/logo.png" alt="Logo Fiap" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="dados.html">DADOS DA FOME</a></li>
+            <li><a href="fome.html">INSEGURANÇA ALIMENTAR</a></li>
+            <li>
+              <a href="agricultura-sustentavel.html">AGRICULTURA SUSTENTÁVEL</a>
+            </li>
+            <li><a href="blog.html">BLOG</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <h1>Blog - Tecnologia no Combate à Fome</h1>
+    </section>
+
+    <!---Blog--->
+
+    <section class="blog-content">
+      <div class="blog-container">
+        <div class="blog-left">
+          <img src="img/img6.jpg" alt="Drone" />
+          <h2>Segurança Alimentar e Tecnologia</h2>
+          <p>
+            A segurança alimentar de uma população é definida por três pilares
+            essências:
+            <br /><br /><b>Disponibilidade de alimentos:</b> Refere-se à
+            quantidade e qualidade dos alimentos disponíveis em determinada
+            região ou país. Envolve aspectos como a produção agrícola, a
+            disponibilidade de alimentos nos mercados e a capacidade de
+            armazenamento e distribuição adequada.
+          </p>
+          <br />
+          <p>
+            <b>Acesso a alimentos:</b> Diz respeito à capacidade das pessoas de
+            obterem alimentos de forma física, econômica e socialmente
+            acessível. Inclui fatores como renda, preços dos alimentos,
+            infraestrutura de transporte, sistemas de distribuição, políticas de
+            comércio, segurança alimentar em termos de disponibilidade de
+            alimentos, entre outros.
+          </p>
+          <br />
+          <p>
+            <b>Utilização e aproveitamento de alimentos:V</b> Refere-se ao uso
+            adequado e seguro dos alimentos, levando em consideração práticas de
+            preparo, armazenamento e consumo. Inclui aspectos relacionados à
+            segurança alimentar, como higiene, saneamento básico, acesso à água
+            potável e educação nutricional.
+          </p>
+          <br />
+
+          <p>
+            A tecnologia pode desempenhar um papel crucial em cada um dos
+            pilares da segurança alimentar da seguinte maneira:
+            <br /><br /><b>Disponibilidade de alimentos:</b> A tecnologia pode
+            ser aplicada na agricultura de várias maneiras para aumentar a
+            produção de alimentos de forma sustentável. Por exemplo, o uso de
+            técnicas avançadas de irrigação, sensoriamento remoto e sistemas de
+            informação geográfica (SIG) pode ajudar os agricultores a otimizar o
+            uso da água e dos recursos naturais, identificar áreas propícias
+            para o cultivo e monitorar o crescimento das plantas. Além disso, a
+            biotecnologia e a engenharia genética podem melhorar a resistência
+            às pragas, aumentar o rendimento das colheitas e desenvolver
+            variedades de plantas mais nutritivas.
+          </p>
+          <br />
+
+          <p>
+            <b>Acesso a alimentos:</b> A tecnologia desempenha um papel
+            importante no acesso aos alimentos, especialmente em áreas remotas
+            ou de difícil acesso. A expansão da infraestrutura de comunicação e
+            o acesso à internet podem facilitar o comércio eletrônico de
+            alimentos, permitindo que as pessoas comprem e vendam produtos
+            alimentícios online. Além disso, as tecnologias de pagamento
+            digital, como carteiras virtuais e pagamentos móveis, podem melhorar
+            a acessibilidade financeira aos alimentos, especialmente para
+            populações sem acesso a serviços bancários. A tecnologia também pode
+            ser usada para rastrear a cadeia de suprimentos de alimentos,
+            garantindo a segurança e a qualidade dos produtos alimentícios.
+          </p>
+          <br />
+
+          <p>
+            <b>Utilização e aproveitamento de alimentos:</b> A tecnologia
+            desempenha um papel importante na preservação e no processamento de
+            alimentos, permitindo que eles sejam armazenados por períodos mais
+            longos e reduzindo o desperdício alimentar. Por exemplo, a
+            refrigeração, a desidratação, a embalagem a vácuo e a tecnologia de
+            conservação por atmosfera modificada podem ajudar a prolongar a vida
+            útil dos alimentos. Além disso, a tecnologia pode fornecer
+            informações nutricionais e orientações sobre o preparo de alimentos
+            saudáveis, contribuindo para a educação alimentar. Aplicativos
+            móveis e dispositivos inteligentes podem fornecer receitas, dicas
+            nutricionais e lembretes de prazos de validade, ajudando as pessoas
+            a aproveitar melhor os alimentos e reduzir o desperdício.
+          </p>
+          <br />
+
+          <div class="comment-box">
+            <h3>Deixe um comentário</h3>
+
+            <form id="form-comment" class="comment-form">
+              <input
+                required
+                id="form-comment-name"
+                type="text"
+                placeholder="Escreva Nome"
+              />
+              <input
+                required
+                id="form-comment-email"
+                type="email"
+                placeholder="Escreva Email"
+              />
+              <textarea
+                required
+                id="form-comment-text"
+                rows="5"
+                placeholder="Seu comentário"
+              ></textarea>
+              <button type="submit" class="hero-btn-red">POSTAR</button>
+            </form>
+          </div>
+        </div>
+        <div class="blog-right">
+          <h3>Fontes do artigo:</h3>
+          <div>
+            <span
+              ><a
+                href="https://www.worldbank.org/en/topic/agriculture/brief/food-security-update/what-is-food-security"
+              >
+                The World Bank: What's Food Security?</a
+              ></span
+            >
+          </div>
+          <div>
+            <span
+              ><a
+                href="https://web.archive.org/web/20040806144802/http://www.who.int/trade/glossary/story028/en/"
+              >
+                Worlds Health Organization: Food Security</a
+              ></span
+            >
+          </div>
+          <div>
+            <span
+              ><a href="https://www.fao.org/3/cc2211en/online/cc2211en.html"
+                >Food and Agriculture Organization: Statistical Yearbook World
+                Food and Agriculture 2022</a
+              ></span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--- Pagination --->
+    <div class="pagination-container">
+      <div class="pagination">
+        <button class="btn1" onclick="backBtn()">
+          <img src="img/arrow.png" /> prev
+        </button>
+        <ul>
+          <li class="link active" value="1" onclick="activeLink()">1</li>
+          <li class="link" value="2" onclick="activeLink()">2</li>
+          <li class="link" value="3" onclick="activeLink()">3</li>
+          <li class="link" value="4" onclick="activeLink()">4</li>
+          <li class="link" value="5" onclick="activeLink()">5</li>
+        </ul>
+        <button class="btn2" onclick="nextBtn()">
+          next <img src="img/arrow.png" />
+        </button>
+      </div>
+    </div>
+
+    <footer class="footer-container">
+      <div class="footer-links">
+        <h4>nossa empresa</h4>
+        <ul>
+          <li><a href="sobre.html">Sobre o Projeto</a></li>
+          <li><a href="#">nossos serviços</a></li>
+          <li><a href="#">termos e política</a></li>
+          <li><a href="#">suporte</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h4>conheça mais</h4>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/shared.js"></script>
+    <script src="./js/blog.js"></script>
+  </body>
+</html>

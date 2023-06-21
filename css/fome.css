@@ -1,0 +1,127 @@
+body .header {
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(../img/fome2.jpg);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.dados-fome {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 65px;
+}
+
+.text-container {
+  flex-basis: 50%;
+  padding: 0px 16px;
+}
+
+.image-container {
+  padding: 16px;
+}
+
+.image-container img {
+  width: 100%;
+  box-shadow: 6px 5px 5px 0 rgba(0, 0, 0, 0.651);
+}
+
+.text-container h1 {
+  padding-top: 0;
+  margin-bottom: 24px;
+}
+
+.text-container p {
+  padding: 5px 0 25px;
+  font-size: 16px;
+}
+
+.dados-fome2 h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+  margin: 60px 0;
+  margin-top: 5px;
+  color: #e9ffec;
+}
+
+.dados-fome2 .box-container {
+  display: flex;
+  max-width: 1200px;
+  padding: 16px;
+  margin: 16px auto 50px auto;
+  gap: 70px;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+@media (max-width: 1250px) {
+  .dados-fome2 .box-container {
+    max-width: 600px;
+    flex-direction: column;
+  }
+}
+
+.dados-fome2 .box-container .box {
+  flex-basis: 31%;
+  background: #7d8880;
+  border-radius: 10px;
+  padding: 25px 30px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.dados-fome2 .box-container .box:hover {
+  box-shadow: 0 0 0 5px rgb(184, 183, 183);
+}
+
+.dados-fome2 .box-container .box h3 {
+  text-align: left;
+  font-weight: 700;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.dados-fome2 .box-container .box p {
+  color: #e0d9d9;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19px;
+  padding: 2px;
+  text-align: left;
+}
+
+section.dados-fome2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+section.dados-fome2:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 8;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0,
+    rgba(0, 0, 0, 0) 20%,
+    #000 100%
+  );
+}
+
+section.dados-fome2 {
+  background-image: url(../img/plant.jpg);
+}

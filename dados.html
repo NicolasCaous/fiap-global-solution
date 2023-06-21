@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>FIAP - Global Solution</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="./css/shared.css" />
+    <link rel="stylesheet" href="./css/dados.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"> <img src="img/logo.png" alt="Logo Fiap" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="dados.html">DADOS DA FOME</a></li>
+            <li><a href="fome.html">INSEGURANÇA ALIMENTAR</a></li>
+            <li>
+              <a href="agricultura-sustentavel.html">AGRICULTURA SUSTENTÁVEL</a>
+            </li>
+            <li><a href="blog.html">BLOG</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Veja os Gráficos da Fome</h1>
+    </section>
+
+    <div class="buttons-container">
+      <button onclick="createChartType('polarArea')">
+        Clique aqui para mudar o gráfico para Polar!
+      </button>
+      <button onclick="createChartType('bar')">
+        Clique aqui para mudar o gráfico para Barra!
+      </button>
+      <button onclick="createChartType('doughnut')">
+        Clique aqui para mudar o gráfico para Doughnut!
+      </button>
+    </div>
+
+    <div class="chart-container">
+      <div id="chartDiv">
+        <canvas id="myChart"></canvas>
+      </div>
+    </div>
+
+    <div class="text-container">
+      <h1 class="title">
+        Percentagem de pessoas com fome em diferentes regiões
+      </h1>
+      <p>
+        A fome continua a ser um desafio crítico em diversas regiões ao redor do
+        mundo. De acordo com os dados mais recentes, a África é uma das áreas
+        mais afetadas, com uma taxa alarmante de 57,9% de pessoas que sofrem com
+        a fome. América Latina e Caribe também enfrentam uma situação
+        preocupante, com 40,6% da população vivendo nessa condição.
+      </p>
+      <p>
+        Apesar da média mundial de fome ser de 29,3%, é importante destacar que
+        muitos países da Ásia ainda lutam para superar essa crise humanitária.
+        Na Oceania, embora os números sejam menores em comparação com outras
+        regiões, ainda existem 13% de pessoas que enfrentam a fome diariamente.
+      </p>
+      <p>
+        Por outro lado, a América do Norte e a Europa apresentam números
+        relativamente mais baixos, com uma taxa de fome de apenas 8%. No
+        entanto, é crucial não ignorar o fato de que mesmo nessas regiões mais
+        desenvolvidas, existem pessoas vulneráveis que precisam de apoio para
+        superar a fome.
+      </p>
+      <p>
+        Além disso, é importante ressaltar a existência da fome grave em todas
+        essas regiões. A porcentagem de pessoas que sofrem com a fome grave é
+        significativa, com números alarmantes em alguns lugares, como na África,
+        com 23,4%, e na América Latina e Caribe, com 14,2%
+      </p>
+      <p>
+        Esses dados refletem a necessidade urgente de ações coordenadas e
+        abrangentes para enfrentar a fome e garantir a segurança alimentar
+        global. É fundamental que governos, organizações internacionais e
+        sociedade civil unam esforços para erradicar essa injustiça e
+        proporcionar um futuro melhor para todas as pessoas, independentemente
+        de sua localização geográfica.
+      </p>
+    </div>
+
+    <footer class="footer-container">
+      <div class="footer-links">
+        <h4>nossa empresa</h4>
+        <ul>
+          <li><a href="sobre.html">Sobre o Projeto</a></li>
+          <li><a href="#">nossos serviços</a></li>
+          <li><a href="#">termos e política</a></li>
+          <li><a href="#">suporte</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h4>conheça mais</h4>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/shared.js"></script>
+    <script src="./js/dados.js"></script>
+  </body>
+</html>
